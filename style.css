@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #000;
+    font-family: "Century Gothic", CenturyGothic;
+}
+
+#title{
+    background-color: #f7f7f7;
+    text-align:center;
+    /* box-shadow: 10px 10px 10px 10px black; */
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
+
+}
+
+#title h1{
+    background:none;
+    padding: 8px 0;
+}
+  
+  .container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+  }
+  
+  .calc{
+    background-color: #000;
+    border-radius: 40px;
+    padding: 47px 20px;
+    display: grid;
+    grid-template-columns: repeat(4,66px);
+    box-shadow: 0 8px 0  whitesmoke;
+  }
+  
+  input[type=text]{
+    grid-column: span 4;
+    height: 60px;
+    /* width: 258px; */
+    background-color: #000;
+    border: none;
+    border-radius: 32px;
+    text-align: end;
+    margin: 40px 0px 0px 0px;
+    padding: 7px;
+    color: #f7f7f7;
+    font-weight: 100;
+    font-size: 65px;
+  }
+  
+  button{
+    border: none;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+     margin: 0 10px;
+    font-size:19px;
+    font-family: Helvetica, sans-serif;
+    opacity: 92%;
+    cursor: pointer;
+  }
+
+
+
+  button:hover{
+    opacity: 100%;
+  }
+  
+  .numbers{
+    background-color:  #333;
+    color: #f7f7f7;
+    font-size: 30px;
+    font-weight: normal;
+    margin-right: 10px;
+  }
+  
+  .operations{
+    background-color:#f1a33c;;
+    color: #f7f7f7;
+    font-size: 27px;
+    font-weight: 600;
+  }
+
+    
+  .functions{
+    background-color: #a0a0a0;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  #inputext::placeholder {
+    color: #f7f7f7;
+    opacity: 1;
+    text-align:right;
+  }
+  
+  #hiddenbtn{
+    height: 0%;
+    width: 0%;
+  }
+
+  #inputtext{
+text-align:right;
+  }
+  
+  #zero{
+    width: 120px;
+    border-radius: 42px;
+    color: #f7f7f7;
+    font-size: 30px;
+    font-weight: normal;
+    background-color: #464646;
+  }
+  
