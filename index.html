@@ -16,7 +16,7 @@
             
     <div class="container">
       <div class="calc">
-        <input type="text" id="inputtext" value="0" readonly >
+        <input type="text" id="inputtext" value="0" aria-label="input" readonly >
         <button class="functions">AC</button>
         <button class="functions" id="delete" >&#8592;</button>
         <button class="functions" >%</button>
@@ -39,14 +39,7 @@
         <button class="operations">=</button>
       </div>
     </div>
-  <script>
-    var n=0;
-    function display(n)
-    {
-      document.getElementById('inputtext').value=n;
-
-    }
-  </script>
+ <script src="calc.js"></script>
   </body>
   
 </html>
