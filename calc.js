@@ -7,9 +7,16 @@ let display=n=>{
     result.value="";
     result.value+=n;
 }
+
 else{
     
     result.value+=n;
+    if(result.value.length==8)
+    {
+    document.getElementById('inputtext').style.fontSize="44px";
+}
+
+
     }
     
 }
@@ -27,6 +34,11 @@ function clr()
 {
     count=0;
     result.value=0;
+    
+        document.getElementById('inputtext').style.fontSize="65px";
+
+    
+    
    
 }
 
@@ -41,6 +53,11 @@ function del()
     else{
 
         result.value=result.value.slice(0,-1);
+        if(result.value.length<8)
+{
+        document.getElementById('inputtext').style.fontSize="65px";
+
+    }
         if(result.value.length==0)
         {
             count=0;
@@ -48,6 +65,9 @@ function del()
         }
     }
 }
+
+
+
 
 
 
