@@ -17,26 +17,26 @@
     <div class="container">
       <div class="calc">
         <input type="text" id="inputtext" value="0" aria-label="input" readonly >
-        <button class="functions">AC</button>
-        <button class="functions" id="delete" >&#8592;</button>
-        <button class="functions" >%</button>
-        <button class="operations" >÷</button>
+        <button class="functions" onclick="clr()">AC</button>
+        <button class="functions" id="delete" onclick="del()">&#8592;</button>
+        <button class="functions" onclick="display('%')" >%</button>
+        <button class="operations" onclick="display('/')">÷</button>
         <button class="numbers"  onclick="display(7)" >7</button>
         <button class="numbers"  onclick="display(8)" >8</button>
         <button class="numbers"  onclick="display(9)" >9</button>
-        <button class="operations" >x</button>
+        <button class="operations" onclick="display('*')" >x</button>
         <button class="numbers"  onclick="display(4)" >4</button>
         <button class="numbers"  onclick="display(5)" >5</button>
         <button class="numbers" onclick="display(6)">6</button>
-        <button class="operations">−</button>
+        <button class="operations" onclick="display('-')">−</button>
         <button class="numbers" onclick="display(1)" >1</button>
         <button class="numbers"  onclick="display(2)">2</button>
         <button class="numbers"  onclick="display(3)">3</button>
-        <button class="operations">+</button>
+        <button class="operations" onclick="display('+')">+</button>
         <button class="numbers" id="zero"  onclick="display(0)" >0</button>
         <button id="hiddenbtn" aria-hidden="true"></button>
-        <button class="numbers" >.</button>
-        <button class="operations">=</button>
+        <button class="numbers" onclick="display('.')" >.</button>
+        <button class="operations" onclick="res()">=</button>
       </div>
     </div>
  <script src="calc.js"></script>

@@ -34,7 +34,7 @@
     padding: 47px 20px;
     display: grid;
     grid-template-columns: repeat(4,66px);
-      grid-gap: 2px;
+      grid-gap: 10px;
     box-shadow: 0 8px 0  whitesmoke;
   }
   

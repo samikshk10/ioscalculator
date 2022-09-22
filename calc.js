@@ -1,5 +1,58 @@
 let result=document.getElementById('inputtext');
-let n;
-function display(n){
+var count =0;
+let display=n=>{
+    count++;
+    if(count==1)
+    {
+    result.value="";
     result.value+=n;
 }
+else{
+    
+    result.value+=n;
+    }
+    
+}
+let res= function(){
+    try{
+    result.value=eval(result.value);
+    }
+    catch (error)
+    {
+        alert("Invalid operation");
+        }
+}
+
+function clr()
+{
+    count=0;
+    result.value=0;
+   
+}
+
+function del()
+{
+
+    if(result.value.length==0)
+    {
+        count=0;
+    result.value=0;
+    }
+    else{
+
+        result.value=result.value.slice(0,-1);
+        if(result.value.length==0)
+        {
+            count=0;
+        result.value=0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
